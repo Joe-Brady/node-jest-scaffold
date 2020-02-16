@@ -1,9 +1,8 @@
-const { getChuckNorrisJoke } = require("./connectors");
-const { double } = require("./services");
+const express = require("express");
+const router = require("./router");
 
-const app = async () => {
-  console.log(double(5));
-  console.log(await getChuckNorrisJoke());
-};
+const app = express();
 
-app();
+app.use(router);
+
+module.exports = app;
