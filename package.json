@@ -1,0 +1,14 @@
+{
+  "name": "node-jest-scaffold",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest --coverage --verbose"
+  },
+  "author": "Joe Brady",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "jest": "^25.1.0"
+  }
+}
